@@ -1,0 +1,7 @@
+label {
+	/*cela permet d'alignr les inputs*/
+    display: block;
+    width: 150px;
+    float: left;
+}
+

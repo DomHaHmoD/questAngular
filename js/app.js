@@ -1,2 +1,3 @@
-angular.module('app', [])
-    .controller('mainController', mainController);
+// MAIN JS APP
+var application = angular.module("quest", []);
+
