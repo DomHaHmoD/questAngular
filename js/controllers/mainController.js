@@ -1,18 +1,23 @@
 // MAIN CONTROLLER
-application.controller("mainController", ['$scope', function($scope){
+quest.controller("mainController", ['$scope', function($scope){
+
 	// le $scope indique le "dommaine d'action du controller"
-    	
-    $scope.tableshow = false;
 
-    $scope.submit = function(){
-    	console.log($scope.userfirstname);
-    	console.log($scope.username);
-    	console.log($scope.useremail);
 
-    	$scope.tableshow = !$scope.tableshow;
-
-    			
-    };
-    		
-
-}])
+        // essai ajout de ligne ds la tableau
+        $scope.liste = [];
+        
+        $scope.addRow = function(){
+            $scope.liste.push({
+            'firstname': $scope.firstname,
+            'name': $scope.name,
+            'email': $scope.email
+            });
+            
+            $scope.firstname = '';
+            $scope.name = '';
+            $scope.email = '';
+            console.log($scope.liste);
+        };
+            
+}]);
