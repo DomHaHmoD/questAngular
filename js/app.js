@@ -1,3 +1,4 @@
 // MAIN JS APP
-var application = angular.module("quest", []);
+var quest = angular.module("quest", [
+	]);
 
